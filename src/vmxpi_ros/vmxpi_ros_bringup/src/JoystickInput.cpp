@@ -10,6 +10,8 @@ void joyCallback(const sensor_msgs::Joy::ConstPtr& joy)
     float x_axis = joy->axes[0];  // Adjust the index according to your joystick mapping
     float y_axis = joy->axes[1];  // Adjust the index according to your joystick mapping
     //This is the test for github pushing
+
+    //This is the test to show that it's working
     // Define the joystick control thresholds
     float threshold = 0.5;  // Adjust the threshold value according to your joystick sensitivity
 
