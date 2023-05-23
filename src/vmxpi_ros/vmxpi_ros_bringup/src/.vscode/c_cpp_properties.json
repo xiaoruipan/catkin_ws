@@ -1,0 +1,29 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/pi/catkin_ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros/include/**",
+        "/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_sensors/vmxpi_ros_cobra/include/**",
+        "/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_io/include/**",
+        "/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_navx/include/**",
+        "/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_servo/include/**",
+        "/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_sensors/vmxpi_ros_sharp/include/**",
+        "/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_titan/include/**",
+        "/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_sensors/vmxpi_ros_ultrasonic/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-arm",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
