@@ -62,7 +62,7 @@ int main(int argc, char* argv[])
 {
     ros::init(argc, argv, "Keyboard_Input_Node");
     ros::NodeHandle nh;
-    ros::Publisher KeyboardInputPub = nh.advertise<std_msgs::String>("plswork", 1);
+    ros::Publisher KeyboardInputPub = nh.advertise<std_msgs::String>("KeyboardInputTopic", 1);
 
     ros::Rate loop_rate(50);
     while (ros::ok())

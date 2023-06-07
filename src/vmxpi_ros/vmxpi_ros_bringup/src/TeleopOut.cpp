@@ -4,7 +4,7 @@
 #include <std_msgs/String.h>
 #include <iostream>
 
-std::string key;
+std::string key, JoystickKey;
 
 void KeyboardInputCallback(const std_msgs::String::ConstPtr& msg)
 {
@@ -12,7 +12,7 @@ void KeyboardInputCallback(const std_msgs::String::ConstPtr& msg)
 }
 void JoystickInputCallback(const std_msgs::String::ConstPtr& msg)
 {
-    key = msg->data;
+    JoystickKey = msg->data;
 }
 
 int main(int argc, char **argv)
@@ -24,8 +24,8 @@ int main(int argc, char **argv)
     ros::NodeHandle nh;
     // ros::Subscriber KeyboardInputSub;
     ros::Subscriber JoyInputSub;
-    JoyInputSub = nh.subscribe("plswork", 1, JoystickInputCallback);
-    ROS_INFO("%s", key.c_str());
+    JoyInputSub = nh.subscribe("JoystickAxisTopic", 1, JoystickInputCallback);
+    ROS_INFO("%s", JoystickKey.c_str());
     ros::spin();
     return 0;
 }
