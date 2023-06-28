@@ -168,6 +168,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named movement_node
+
+# Build rule for target.
+movement_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 movement_node
+.PHONY : movement_node
+
+# fast build rule for target.
+movement_node/fast:
+	$(MAKE) -f CMakeFiles/movement_node.dir/build.make CMakeFiles/movement_node.dir/build
+.PHONY : movement_node/fast
+
+#=============================================================================
 # Target rules for targets named JoystickInput
 
 # Build rule for target.
@@ -205,6 +218,19 @@ KeyboardInputs: cmake_check_build_system
 KeyboardInputs/fast:
 	$(MAKE) -f CMakeFiles/KeyboardInputs.dir/build.make CMakeFiles/KeyboardInputs.dir/build
 .PHONY : KeyboardInputs/fast
+
+#=============================================================================
+# Target rules for targets named Teleopmovement
+
+# Build rule for target.
+Teleopmovement: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Teleopmovement
+.PHONY : Teleopmovement
+
+# fast build rule for target.
+Teleopmovement/fast:
+	$(MAKE) -f CMakeFiles/Teleopmovement.dir/build.make CMakeFiles/Teleopmovement.dir/build
+.PHONY : Teleopmovement/fast
 
 #=============================================================================
 # Target rules for targets named std_msgs_generate_messages_nodejs
@@ -413,6 +439,19 @@ download_extra_data: cmake_check_build_system
 download_extra_data/fast:
 	$(MAKE) -f CMakeFiles/download_extra_data.dir/build.make CMakeFiles/download_extra_data.dir/build
 .PHONY : download_extra_data/fast
+
+#=============================================================================
+# Target rules for targets named MoveArm
+
+# Build rule for target.
+MoveArm: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 MoveArm
+.PHONY : MoveArm
+
+# fast build rule for target.
+MoveArm/fast:
+	$(MAKE) -f CMakeFiles/MoveArm.dir/build.make CMakeFiles/MoveArm.dir/build
+.PHONY : MoveArm/fast
 
 #=============================================================================
 # Target rules for targets named doxygen
@@ -636,6 +675,19 @@ vmxpi_ros_generate_messages_py/fast:
 .PHONY : vmxpi_ros_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named testarm
+
+# Build rule for target.
+testarm: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testarm
+.PHONY : testarm
+
+# fast build rule for target.
+testarm/fast:
+	$(MAKE) -f CMakeFiles/testarm.dir/build.make CMakeFiles/testarm.dir/build
+.PHONY : testarm/fast
+
+#=============================================================================
 # Target rules for targets named vmxpi_ros_bringup_gencfg
 
 # Build rule for target.
@@ -780,6 +832,33 @@ src/KeyboardInputs.cpp.s:
 	$(MAKE) -f CMakeFiles/KeyboardInputs.dir/build.make CMakeFiles/KeyboardInputs.dir/src/KeyboardInputs.cpp.s
 .PHONY : src/KeyboardInputs.cpp.s
 
+src/MoveArm.o: src/MoveArm.cpp.o
+
+.PHONY : src/MoveArm.o
+
+# target to build an object file
+src/MoveArm.cpp.o:
+	$(MAKE) -f CMakeFiles/MoveArm.dir/build.make CMakeFiles/MoveArm.dir/src/MoveArm.cpp.o
+.PHONY : src/MoveArm.cpp.o
+
+src/MoveArm.i: src/MoveArm.cpp.i
+
+.PHONY : src/MoveArm.i
+
+# target to preprocess a source file
+src/MoveArm.cpp.i:
+	$(MAKE) -f CMakeFiles/MoveArm.dir/build.make CMakeFiles/MoveArm.dir/src/MoveArm.cpp.i
+.PHONY : src/MoveArm.cpp.i
+
+src/MoveArm.s: src/MoveArm.cpp.s
+
+.PHONY : src/MoveArm.s
+
+# target to generate assembly for a file
+src/MoveArm.cpp.s:
+	$(MAKE) -f CMakeFiles/MoveArm.dir/build.make CMakeFiles/MoveArm.dir/src/MoveArm.cpp.s
+.PHONY : src/MoveArm.cpp.s
+
 src/TESTING.o: src/TESTING.cpp.o
 
 .PHONY : src/TESTING.o
@@ -834,6 +913,33 @@ src/TeleopOut.cpp.s:
 	$(MAKE) -f CMakeFiles/TeleopOut.dir/build.make CMakeFiles/TeleopOut.dir/src/TeleopOut.cpp.s
 .PHONY : src/TeleopOut.cpp.s
 
+src/Teleopmovement.o: src/Teleopmovement.cpp.o
+
+.PHONY : src/Teleopmovement.o
+
+# target to build an object file
+src/Teleopmovement.cpp.o:
+	$(MAKE) -f CMakeFiles/Teleopmovement.dir/build.make CMakeFiles/Teleopmovement.dir/src/Teleopmovement.cpp.o
+.PHONY : src/Teleopmovement.cpp.o
+
+src/Teleopmovement.i: src/Teleopmovement.cpp.i
+
+.PHONY : src/Teleopmovement.i
+
+# target to preprocess a source file
+src/Teleopmovement.cpp.i:
+	$(MAKE) -f CMakeFiles/Teleopmovement.dir/build.make CMakeFiles/Teleopmovement.dir/src/Teleopmovement.cpp.i
+.PHONY : src/Teleopmovement.cpp.i
+
+src/Teleopmovement.s: src/Teleopmovement.cpp.s
+
+.PHONY : src/Teleopmovement.s
+
+# target to generate assembly for a file
+src/Teleopmovement.cpp.s:
+	$(MAKE) -f CMakeFiles/Teleopmovement.dir/build.make CMakeFiles/Teleopmovement.dir/src/Teleopmovement.cpp.s
+.PHONY : src/Teleopmovement.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -860,6 +966,33 @@ src/main.s: src/main.cpp.s
 src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/main_node.dir/build.make CMakeFiles/main_node.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/movement_node.o: src/movement_node.cpp.o
+
+.PHONY : src/movement_node.o
+
+# target to build an object file
+src/movement_node.cpp.o:
+	$(MAKE) -f CMakeFiles/movement_node.dir/build.make CMakeFiles/movement_node.dir/src/movement_node.cpp.o
+.PHONY : src/movement_node.cpp.o
+
+src/movement_node.i: src/movement_node.cpp.i
+
+.PHONY : src/movement_node.i
+
+# target to preprocess a source file
+src/movement_node.cpp.i:
+	$(MAKE) -f CMakeFiles/movement_node.dir/build.make CMakeFiles/movement_node.dir/src/movement_node.cpp.i
+.PHONY : src/movement_node.cpp.i
+
+src/movement_node.s: src/movement_node.cpp.s
+
+.PHONY : src/movement_node.s
+
+# target to generate assembly for a file
+src/movement_node.cpp.s:
+	$(MAKE) -f CMakeFiles/movement_node.dir/build.make CMakeFiles/movement_node.dir/src/movement_node.cpp.s
+.PHONY : src/movement_node.cpp.s
 
 src/test_node.o: src/test_node.cpp.o
 
@@ -888,6 +1021,33 @@ src/test_node.cpp.s:
 	$(MAKE) -f CMakeFiles/test_node.dir/build.make CMakeFiles/test_node.dir/src/test_node.cpp.s
 .PHONY : src/test_node.cpp.s
 
+src/testarm.o: src/testarm.cpp.o
+
+.PHONY : src/testarm.o
+
+# target to build an object file
+src/testarm.cpp.o:
+	$(MAKE) -f CMakeFiles/testarm.dir/build.make CMakeFiles/testarm.dir/src/testarm.cpp.o
+.PHONY : src/testarm.cpp.o
+
+src/testarm.i: src/testarm.cpp.i
+
+.PHONY : src/testarm.i
+
+# target to preprocess a source file
+src/testarm.cpp.i:
+	$(MAKE) -f CMakeFiles/testarm.dir/build.make CMakeFiles/testarm.dir/src/testarm.cpp.i
+.PHONY : src/testarm.cpp.i
+
+src/testarm.s: src/testarm.cpp.s
+
+.PHONY : src/testarm.s
+
+# target to generate assembly for a file
+src/testarm.cpp.s:
+	$(MAKE) -f CMakeFiles/testarm.dir/build.make CMakeFiles/testarm.dir/src/testarm.cpp.s
+.PHONY : src/testarm.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -898,9 +1058,11 @@ help:
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... test"
+	@echo "... movement_node"
 	@echo "... JoystickInput"
 	@echo "... TeleopOut"
 	@echo "... KeyboardInputs"
+	@echo "... Teleopmovement"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_eus"
@@ -919,6 +1081,7 @@ help:
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... download_extra_data"
+	@echo "... MoveArm"
 	@echo "... doxygen"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... tests"
@@ -937,6 +1100,7 @@ help:
 	@echo "... vmxpi_ros_generate_messages_eus"
 	@echo "... vmxpi_ros_generate_messages_lisp"
 	@echo "... vmxpi_ros_generate_messages_py"
+	@echo "... testarm"
 	@echo "... vmxpi_ros_bringup_gencfg"
 	@echo "... test_node"
 	@echo "... TESTING"
@@ -950,18 +1114,30 @@ help:
 	@echo "... src/KeyboardInputs.o"
 	@echo "... src/KeyboardInputs.i"
 	@echo "... src/KeyboardInputs.s"
+	@echo "... src/MoveArm.o"
+	@echo "... src/MoveArm.i"
+	@echo "... src/MoveArm.s"
 	@echo "... src/TESTING.o"
 	@echo "... src/TESTING.i"
 	@echo "... src/TESTING.s"
 	@echo "... src/TeleopOut.o"
 	@echo "... src/TeleopOut.i"
 	@echo "... src/TeleopOut.s"
+	@echo "... src/Teleopmovement.o"
+	@echo "... src/Teleopmovement.i"
+	@echo "... src/Teleopmovement.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/movement_node.o"
+	@echo "... src/movement_node.i"
+	@echo "... src/movement_node.s"
 	@echo "... src/test_node.o"
 	@echo "... src/test_node.i"
 	@echo "... src/test_node.s"
+	@echo "... src/testarm.o"
+	@echo "... src/testarm.i"
+	@echo "... src/testarm.s"
 .PHONY : help
 
 

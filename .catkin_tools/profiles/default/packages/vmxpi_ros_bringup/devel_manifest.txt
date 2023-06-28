@@ -1,10 +1,15 @@
 vmxpi_ros/vmxpi_ros_bringup
 /home/pi/catkin_ws/devel/.private/vmxpi_ros_bringup/cmake.lock /home/pi/catkin_ws/devel/./cmake.lock
 /home/pi/catkin_ws/devel/.private/vmxpi_ros_bringup/include/vmxpi_ros_bringup/MotorSpeedConfig.h /home/pi/catkin_ws/devel/include/vmxpi_ros_bringup/MotorSpeedConfig.h
+/home/pi/catkin_ws/devel/.private/vmxpi_ros_bringup/lib/vmxpi_ros_bringup/MoveArm /home/pi/catkin_ws/devel/lib/vmxpi_ros_bringup/MoveArm
+/home/pi/catkin_ws/devel/.private/vmxpi_ros_bringup/lib/vmxpi_ros_bringup/Teleopmovement /home/pi/catkin_ws/devel/lib/vmxpi_ros_bringup/Teleopmovement
 /home/pi/catkin_ws/devel/.private/vmxpi_ros_bringup/lib/vmxpi_ros_bringup/KeyboardInputs /home/pi/catkin_ws/devel/lib/vmxpi_ros_bringup/KeyboardInputs
 /home/pi/catkin_ws/devel/.private/vmxpi_ros_bringup/lib/vmxpi_ros_bringup/JoystickInput /home/pi/catkin_ws/devel/lib/vmxpi_ros_bringup/JoystickInput
 /home/pi/catkin_ws/devel/.private/vmxpi_ros_bringup/lib/vmxpi_ros_bringup/main_node /home/pi/catkin_ws/devel/lib/vmxpi_ros_bringup/main_node
 /home/pi/catkin_ws/devel/.private/vmxpi_ros_bringup/lib/vmxpi_ros_bringup/TeleopOut /home/pi/catkin_ws/devel/lib/vmxpi_ros_bringup/TeleopOut
+/home/pi/catkin_ws/devel/.private/vmxpi_ros_bringup/lib/vmxpi_ros_bringup/Battery /home/pi/catkin_ws/devel/lib/vmxpi_ros_bringup/Battery
+/home/pi/catkin_ws/devel/.private/vmxpi_ros_bringup/lib/vmxpi_ros_bringup/testarm /home/pi/catkin_ws/devel/lib/vmxpi_ros_bringup/testarm
+/home/pi/catkin_ws/devel/.private/vmxpi_ros_bringup/lib/vmxpi_ros_bringup/movement_node /home/pi/catkin_ws/devel/lib/vmxpi_ros_bringup/movement_node
 /home/pi/catkin_ws/devel/.private/vmxpi_ros_bringup/lib/vmxpi_ros_bringup/test_node /home/pi/catkin_ws/devel/lib/vmxpi_ros_bringup/test_node
 /home/pi/catkin_ws/devel/.private/vmxpi_ros_bringup/lib/vmxpi_ros_bringup/TESTING /home/pi/catkin_ws/devel/lib/vmxpi_ros_bringup/TESTING
 /home/pi/catkin_ws/devel/.private/vmxpi_ros_bringup/lib/pkgconfig/vmxpi_ros_bringup.pc /home/pi/catkin_ws/devel/lib/pkgconfig/vmxpi_ros_bringup.pc

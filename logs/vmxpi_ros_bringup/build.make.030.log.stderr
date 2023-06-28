@@ -1,26 +1,29 @@
-In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
-                 from [01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/TeleopOut.cpp:1[m[K:
-[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/TeleopOut.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
-[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/TeleopOut.cpp:20:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kmessage[m[K’ was not declared in this scope
-     ROS_DEBUG("%s", [01;31m[Kmessage[m[K.c_str());
-                     [01;31m[K^~~~~~~[m[K
-[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
-     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
-                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
-[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
-       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
-       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
-[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
- #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
-                                   [01;36m[K^~~~~~~~~~~~[m[K
-[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:58:24:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
- #define ROS_DEBUG(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Debug, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
-                        [01;36m[K^~~~~~~[m[K
-[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/TeleopOut.cpp:20:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_DEBUG[m[K’
-     [01;36m[KROS_DEBUG[m[K("%s", message.c_str());
-     [01;36m[K^~~~~~~~~[m[K
-make[2]: *** [CMakeFiles/TeleopOut.dir/build.make:63: CMakeFiles/TeleopOut.dir/src/TeleopOut.cpp.o] Error 1
-make[1]: *** [CMakeFiles/Makefile2:177: CMakeFiles/TeleopOut.dir/all] Error 2
+[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/MoveArm.cpp:20:7:[m[K [01;31m[Kerror: [m[K‘[01m[KVMXPi vmx[m[K’ redeclared as different kind of symbol
+ VMXPi [01;31m[Kvmx[m[K;
+       [01;31m[K^~~[m[K
+In file included from [01m[K/usr/local/include/vmxpi/VMXPi.h:26[m[K,
+                 from [01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/../vmxpi_ros_servo/include/Servo_ros.h:4[m[K,
+                 from [01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/MoveArm.cpp:3[m[K:
+[01m[K/usr/local/include/vmxpi/AHRS.h:52:11:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Knamespace vmx { }[m[K’
+ namespace [01;36m[Kvmx[m[K {
+           [01;36m[K^~~[m[K
+[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/MoveArm.cpp:[m[K In function ‘[01m[Kvoid ShoulderOffsetCallback(const ConstPtr&)[m[K’:
+[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/MoveArm.cpp:35:37:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K,[m[K’ token
+     ServoROS ShoulderServo(&nh, &vmx[01;31m[K,[m[K channel1);
+                                     [01;31m[K^[m[K
+[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/MoveArm.cpp:[m[K In function ‘[01m[Kvoid ElbowOffsetCallback(const ConstPtr&)[m[K’:
+[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/MoveArm.cpp:46:34:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K,[m[K’ token
+     ServoROS ElbowServo(&nh, &vmx[01;31m[K,[m[K channel2);
+                                  [01;31m[K^[m[K
+[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/MoveArm.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/MoveArm.cpp:59:37:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K,[m[K’ token
+     ServoROS ShoulderServo(&nh, &vmx[01;31m[K,[m[K channel1);
+                                     [01;31m[K^[m[K
+[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/MoveArm.cpp:60:34:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K,[m[K’ token
+     ServoROS ElbowServo(&nh, &vmx[01;31m[K,[m[K channel2);
+                                  [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/MoveArm.dir/build.make:63: CMakeFiles/MoveArm.dir/src/MoveArm.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:754: CMakeFiles/MoveArm.dir/all] Error 2
 make[1]: *** Waiting for unfinished jobs....
 In file included from [01m[K/usr/include/c++/8/vector:69[m[K,
                  from [01m[K/usr/include/boost/math/special_functions/math_fwd.hpp:26[m[K,

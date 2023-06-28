@@ -1,12 +1,9 @@
-[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/KeyboardInputs.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
-[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/KeyboardInputs.cpp:113:37:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kstd::__cxx11::string getJoystickInput(const ConstPtr&)[m[K’
-         key.data = getJoystickInput([01;31m[K)[m[K;
-                                     [01;31m[K^[m[K
-[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/KeyboardInputs.cpp:61:13:[m[K [01;36m[Knote: [m[Kdeclared here
- std::string [01;36m[KgetJoystickInput[m[K(const sensor_msgs::Joy::ConstPtr& joy)
-             [01;36m[K^~~~~~~~~~~~~~~~[m[K
-make[2]: *** [CMakeFiles/KeyboardInputs.dir/build.make:63: CMakeFiles/KeyboardInputs.dir/src/KeyboardInputs.cpp.o] Error 1
-make[1]: *** [CMakeFiles/Makefile2:204: CMakeFiles/KeyboardInputs.dir/all] Error 2
+[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/MoveArm.cpp:5:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/Float.h: No such file or directory
+ #include [01;31m[K"std_msgs/Float.h"[m[K
+          [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/MoveArm.dir/build.make:63: CMakeFiles/MoveArm.dir/src/MoveArm.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:754: CMakeFiles/MoveArm.dir/all] Error 2
 make[1]: *** Waiting for unfinished jobs....
 In file included from [01m[K/usr/include/c++/8/vector:69[m[K,
                  from [01m[K/usr/include/boost/math/special_functions/math_fwd.hpp:26[m[K,

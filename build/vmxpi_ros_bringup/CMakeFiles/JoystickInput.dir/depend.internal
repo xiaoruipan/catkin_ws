@@ -60,6 +60,7 @@ CMakeFiles/JoystickInput.dir/src/JoystickInput.cpp.o
  /opt/ros/noetic/include/ros/wall_timer_options.h
  /opt/ros/noetic/include/rosconsole/macros_generated.h
  /opt/ros/noetic/include/sensor_msgs/Joy.h
+ /opt/ros/noetic/include/std_msgs/Float32.h
  /opt/ros/noetic/include/std_msgs/Header.h
  /opt/ros/noetic/include/std_msgs/String.h
  /opt/ros/noetic/include/xmlrpcpp/XmlRpcDecl.h

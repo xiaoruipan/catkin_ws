@@ -53,10 +53,14 @@ CMAKE_BINARY_DIR = /home/pi/catkin_ws/build/vmxpi_ros_bringup
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/movement_node.dir/all
 all: CMakeFiles/JoystickInput.dir/all
 all: CMakeFiles/TeleopOut.dir/all
 all: CMakeFiles/KeyboardInputs.dir/all
+all: CMakeFiles/Teleopmovement.dir/all
 all: CMakeFiles/main_node.dir/all
+all: CMakeFiles/MoveArm.dir/all
+all: CMakeFiles/testarm.dir/all
 all: CMakeFiles/vmxpi_ros_bringup_gencfg.dir/all
 all: CMakeFiles/test_node.dir/all
 all: CMakeFiles/TESTING.dir/all
@@ -70,9 +74,11 @@ preinstall: gtest/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/movement_node.dir/clean
 clean: CMakeFiles/JoystickInput.dir/clean
 clean: CMakeFiles/TeleopOut.dir/clean
 clean: CMakeFiles/KeyboardInputs.dir/clean
+clean: CMakeFiles/Teleopmovement.dir/clean
 clean: CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
 clean: CMakeFiles/std_msgs_generate_messages_py.dir/clean
 clean: CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
@@ -89,6 +95,7 @@ clean: CMakeFiles/main_node.dir/clean
 clean: CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 clean: CMakeFiles/roscpp_generate_messages_eus.dir/clean
 clean: CMakeFiles/download_extra_data.dir/clean
+clean: CMakeFiles/MoveArm.dir/clean
 clean: CMakeFiles/doxygen.dir/clean
 clean: CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 clean: CMakeFiles/tests.dir/clean
@@ -106,6 +113,7 @@ clean: CMakeFiles/vmxpi_ros_generate_messages_cpp.dir/clean
 clean: CMakeFiles/vmxpi_ros_generate_messages_eus.dir/clean
 clean: CMakeFiles/vmxpi_ros_generate_messages_lisp.dir/clean
 clean: CMakeFiles/vmxpi_ros_generate_messages_py.dir/clean
+clean: CMakeFiles/testarm.dir/clean
 clean: CMakeFiles/vmxpi_ros_bringup_gencfg.dir/clean
 clean: CMakeFiles/test_node.dir/clean
 clean: CMakeFiles/TESTING.dir/clean
@@ -171,6 +179,33 @@ gtest/googlemock/gtest/clean: gtest/googlemock/gtest/CMakeFiles/gtest.dir/clean
 .PHONY : gtest/googlemock/gtest/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/movement_node.dir
+
+# All Build rule for target.
+CMakeFiles/movement_node.dir/all: CMakeFiles/vmxpi_ros_bringup_gencfg.dir/all
+	$(MAKE) -f CMakeFiles/movement_node.dir/build.make CMakeFiles/movement_node.dir/depend
+	$(MAKE) -f CMakeFiles/movement_node.dir/build.make CMakeFiles/movement_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles --progress-num=23,24 "Built target movement_node"
+.PHONY : CMakeFiles/movement_node.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/movement_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/movement_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles 0
+.PHONY : CMakeFiles/movement_node.dir/rule
+
+# Convenience name for target.
+movement_node: CMakeFiles/movement_node.dir/rule
+
+.PHONY : movement_node
+
+# clean rule for target.
+CMakeFiles/movement_node.dir/clean:
+	$(MAKE) -f CMakeFiles/movement_node.dir/build.make CMakeFiles/movement_node.dir/clean
+.PHONY : CMakeFiles/movement_node.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/JoystickInput.dir
 
 # All Build rule for target.
@@ -204,7 +239,7 @@ CMakeFiles/JoystickInput.dir/clean:
 CMakeFiles/TeleopOut.dir/all: CMakeFiles/vmxpi_ros_bringup_gencfg.dir/all
 	$(MAKE) -f CMakeFiles/TeleopOut.dir/build.make CMakeFiles/TeleopOut.dir/depend
 	$(MAKE) -f CMakeFiles/TeleopOut.dir/build.make CMakeFiles/TeleopOut.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles --progress-num=7,8 "Built target TeleopOut"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles --progress-num=9,10 "Built target TeleopOut"
 .PHONY : CMakeFiles/TeleopOut.dir/all
 
 # Build rule for subdir invocation for target.
@@ -250,6 +285,33 @@ KeyboardInputs: CMakeFiles/KeyboardInputs.dir/rule
 CMakeFiles/KeyboardInputs.dir/clean:
 	$(MAKE) -f CMakeFiles/KeyboardInputs.dir/build.make CMakeFiles/KeyboardInputs.dir/clean
 .PHONY : CMakeFiles/KeyboardInputs.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Teleopmovement.dir
+
+# All Build rule for target.
+CMakeFiles/Teleopmovement.dir/all: CMakeFiles/vmxpi_ros_bringup_gencfg.dir/all
+	$(MAKE) -f CMakeFiles/Teleopmovement.dir/build.make CMakeFiles/Teleopmovement.dir/depend
+	$(MAKE) -f CMakeFiles/Teleopmovement.dir/build.make CMakeFiles/Teleopmovement.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles --progress-num=11,12 "Built target Teleopmovement"
+.PHONY : CMakeFiles/Teleopmovement.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Teleopmovement.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Teleopmovement.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles 0
+.PHONY : CMakeFiles/Teleopmovement.dir/rule
+
+# Convenience name for target.
+Teleopmovement: CMakeFiles/Teleopmovement.dir/rule
+
+.PHONY : Teleopmovement
+
+# clean rule for target.
+CMakeFiles/Teleopmovement.dir/clean:
+	$(MAKE) -f CMakeFiles/Teleopmovement.dir/build.make CMakeFiles/Teleopmovement.dir/clean
+.PHONY : CMakeFiles/Teleopmovement.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/std_msgs_generate_messages_nodejs.dir
@@ -582,7 +644,7 @@ CMakeFiles/roscpp_generate_messages_nodejs.dir/clean:
 CMakeFiles/main_node.dir/all: CMakeFiles/vmxpi_ros_bringup_gencfg.dir/all
 	$(MAKE) -f CMakeFiles/main_node.dir/build.make CMakeFiles/main_node.dir/depend
 	$(MAKE) -f CMakeFiles/main_node.dir/build.make CMakeFiles/main_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles --progress-num=17,18 "Built target main_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles --progress-num=21,22 "Built target main_node"
 .PHONY : CMakeFiles/main_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -682,6 +744,33 @@ download_extra_data: CMakeFiles/download_extra_data.dir/rule
 CMakeFiles/download_extra_data.dir/clean:
 	$(MAKE) -f CMakeFiles/download_extra_data.dir/build.make CMakeFiles/download_extra_data.dir/clean
 .PHONY : CMakeFiles/download_extra_data.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/MoveArm.dir
+
+# All Build rule for target.
+CMakeFiles/MoveArm.dir/all: CMakeFiles/vmxpi_ros_bringup_gencfg.dir/all
+	$(MAKE) -f CMakeFiles/MoveArm.dir/build.make CMakeFiles/MoveArm.dir/depend
+	$(MAKE) -f CMakeFiles/MoveArm.dir/build.make CMakeFiles/MoveArm.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles --progress-num=5,6 "Built target MoveArm"
+.PHONY : CMakeFiles/MoveArm.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/MoveArm.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/MoveArm.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles 0
+.PHONY : CMakeFiles/MoveArm.dir/rule
+
+# Convenience name for target.
+MoveArm: CMakeFiles/MoveArm.dir/rule
+
+.PHONY : MoveArm
+
+# clean rule for target.
+CMakeFiles/MoveArm.dir/clean:
+	$(MAKE) -f CMakeFiles/MoveArm.dir/build.make CMakeFiles/MoveArm.dir/clean
+.PHONY : CMakeFiles/MoveArm.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/doxygen.dir
@@ -1143,13 +1232,40 @@ CMakeFiles/vmxpi_ros_generate_messages_py.dir/clean:
 .PHONY : CMakeFiles/vmxpi_ros_generate_messages_py.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/testarm.dir
+
+# All Build rule for target.
+CMakeFiles/testarm.dir/all: CMakeFiles/vmxpi_ros_bringup_gencfg.dir/all
+	$(MAKE) -f CMakeFiles/testarm.dir/build.make CMakeFiles/testarm.dir/depend
+	$(MAKE) -f CMakeFiles/testarm.dir/build.make CMakeFiles/testarm.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles --progress-num=27,28 "Built target testarm"
+.PHONY : CMakeFiles/testarm.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/testarm.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/testarm.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles 0
+.PHONY : CMakeFiles/testarm.dir/rule
+
+# Convenience name for target.
+testarm: CMakeFiles/testarm.dir/rule
+
+.PHONY : testarm
+
+# clean rule for target.
+CMakeFiles/testarm.dir/clean:
+	$(MAKE) -f CMakeFiles/testarm.dir/build.make CMakeFiles/testarm.dir/clean
+.PHONY : CMakeFiles/testarm.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/vmxpi_ros_bringup_gencfg.dir
 
 # All Build rule for target.
 CMakeFiles/vmxpi_ros_bringup_gencfg.dir/all:
 	$(MAKE) -f CMakeFiles/vmxpi_ros_bringup_gencfg.dir/build.make CMakeFiles/vmxpi_ros_bringup_gencfg.dir/depend
 	$(MAKE) -f CMakeFiles/vmxpi_ros_bringup_gencfg.dir/build.make CMakeFiles/vmxpi_ros_bringup_gencfg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles --progress-num=21 "Built target vmxpi_ros_bringup_gencfg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles --progress-num=29 "Built target vmxpi_ros_bringup_gencfg"
 .PHONY : CMakeFiles/vmxpi_ros_bringup_gencfg.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1176,7 +1292,7 @@ CMakeFiles/vmxpi_ros_bringup_gencfg.dir/clean:
 CMakeFiles/test_node.dir/all: CMakeFiles/vmxpi_ros_bringup_gencfg.dir/all
 	$(MAKE) -f CMakeFiles/test_node.dir/build.make CMakeFiles/test_node.dir/depend
 	$(MAKE) -f CMakeFiles/test_node.dir/build.make CMakeFiles/test_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles --progress-num=19,20 "Built target test_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles --progress-num=25,26 "Built target test_node"
 .PHONY : CMakeFiles/test_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1203,7 +1319,7 @@ CMakeFiles/test_node.dir/clean:
 CMakeFiles/TESTING.dir/all: CMakeFiles/vmxpi_ros_bringup_gencfg.dir/all
 	$(MAKE) -f CMakeFiles/TESTING.dir/build.make CMakeFiles/TESTING.dir/depend
 	$(MAKE) -f CMakeFiles/TESTING.dir/build.make CMakeFiles/TESTING.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles --progress-num=5,6 "Built target TESTING"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles --progress-num=7,8 "Built target TESTING"
 .PHONY : CMakeFiles/TESTING.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1231,7 +1347,7 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googlemock/CMakeFiles/gmoc
 gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles --progress-num=11,12 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles --progress-num=15,16 "Built target gmock_main"
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1258,7 +1374,7 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/clean:
 gtest/googlemock/CMakeFiles/gmock.dir/all: gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles --progress-num=9,10 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles --progress-num=13,14 "Built target gmock"
 .PHONY : gtest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1285,7 +1401,7 @@ gtest/googlemock/CMakeFiles/gmock.dir/clean:
 gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/all: gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles --progress-num=15,16 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles --progress-num=19,20 "Built target gtest_main"
 .PHONY : gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1312,7 +1428,7 @@ gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/clean:
 gtest/googlemock/gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles --progress-num=13,14 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles --progress-num=17,18 "Built target gtest"
 .PHONY : gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.

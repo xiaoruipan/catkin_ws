@@ -1,24 +1,16 @@
-In file included from [01m[K/opt/ros/noetic/include/ros/serialization.h:37[m[K,
-                 from [01m[K/opt/ros/noetic/include/ros/publisher.h:34[m[K,
-                 from [01m[K/opt/ros/noetic/include/ros/node_handle.h:32[m[K,
-                 from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
-                 from [01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/JoystickInput.cpp:1[m[K:
-/opt/ros/noetic/include/ros/message_traits.h: In instantiation of ‘[01m[Kstatic const char* ros::message_traits::MD5Sum<M>::value(const M&) [with M = std::__cxx11::basic_string<char>][m[K’:
-[01m[K/opt/ros/noetic/include/ros/message_traits.h:254:102:[m[K   required from ‘[01m[Kconst char* ros::message_traits::md5sum(const M&) [with M = std::__cxx11::basic_string<char>][m[K’
-[01m[K/opt/ros/noetic/include/ros/publisher.h:117:38:[m[K   required from ‘[01m[Kvoid ros::Publisher::publish(const M&) const [with M = std::__cxx11::basic_string<char>][m[K’
-[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/JoystickInput.cpp:46:28:[m[K   required from here
-[01m[K/opt/ros/noetic/include/ros/message_traits.h:125:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst class std::__cxx11::basic_string<char>[m[K’ has no member named ‘[01m[K__getMD5Sum[m[K’
-     return [01;31m[Km.__getMD5Sum[m[K().c_str();
-            [01;31m[K~~^~~~~~~~~~~[m[K
-/opt/ros/noetic/include/ros/message_traits.h: In instantiation of ‘[01m[Kstatic const char* ros::message_traits::DataType<M>::value(const M&) [with M = std::__cxx11::basic_string<char>][m[K’:
-[01m[K/opt/ros/noetic/include/ros/message_traits.h:263:104:[m[K   required from ‘[01m[Kconst char* ros::message_traits::datatype(const M&) [with M = std::__cxx11::basic_string<char>][m[K’
-[01m[K/opt/ros/noetic/include/ros/publisher.h:119:11:[m[K   required from ‘[01m[Kvoid ros::Publisher::publish(const M&) const [with M = std::__cxx11::basic_string<char>][m[K’
-[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/JoystickInput.cpp:46:28:[m[K   required from here
-[01m[K/opt/ros/noetic/include/ros/message_traits.h:142:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst class std::__cxx11::basic_string<char>[m[K’ has no member named ‘[01m[K__getDataType[m[K’
-     return [01;31m[Km.__getDataType[m[K().c_str();
-            [01;31m[K~~^~~~~~~~~~~~~[m[K
-make[2]: *** [CMakeFiles/JoystickInput.dir/build.make:63: CMakeFiles/JoystickInput.dir/src/JoystickInput.cpp.o] Error 1
-make[1]: *** [CMakeFiles/Makefile2:179: CMakeFiles/JoystickInput.dir/all] Error 2
+[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/Battery.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/Battery.cpp:17:16:[m[K [01;31m[Kerror: [m[Kaggregate ‘[01m[KMISCClient miscClient[m[K’ has incomplete type and cannot be defined
+     MISCClient [01;31m[KmiscClient[m[K;
+                [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/Battery.cpp:18:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kvirtual VMXPower::~VMXPower()[m[K’ is private within this context
+     VMXPower vmxPower(miscClient[01;31m[K)[m[K;
+                                 [01;31m[K^[m[K
+In file included from [01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/Battery.cpp:3[m[K:
+[01m[K/usr/local/include/vmxpi/VMXPower.h:37:10:[m[K [01;36m[Knote: [m[Kdeclared private here
+  virtual [01;36m[K~[m[KVMXPower();
+          [01;36m[K^[m[K
+make[2]: *** [CMakeFiles/Battery.dir/build.make:63: CMakeFiles/Battery.dir/src/Battery.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:945: CMakeFiles/Battery.dir/all] Error 2
 make[1]: *** Waiting for unfinished jobs....
 In file included from [01m[K/usr/include/c++/8/vector:69[m[K,
                  from [01m[K/usr/include/boost/math/special_functions/math_fwd.hpp:26[m[K,

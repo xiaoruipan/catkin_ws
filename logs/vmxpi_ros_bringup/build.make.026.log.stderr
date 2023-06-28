@@ -1,3 +1,75 @@
+[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/MoveArm.cpp:42:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kdouble servo_angle[m[K’
+ double [01;31m[Kservo_angle[m[K;
+        [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/MoveArm.cpp:25:8:[m[K [01;36m[Knote: [m[K‘[01m[Kdouble servo_angle[m[K’ previously declared here
+ double [01;36m[Kservo_angle[m[K;
+        [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/MoveArm.cpp:43:7:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kfloat ShoulderServoAngle[m[K’
+ float [01;31m[KShoulderServoAngle[m[K, ElbowServoAngle;
+       [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/MoveArm.cpp:26:7:[m[K [01;36m[Knote: [m[K‘[01m[Kfloat ShoulderServoAngle[m[K’ previously declared here
+ float [01;36m[KShoulderServoAngle[m[K, ElbowServoAngle;
+       [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/MoveArm.cpp:43:27:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kfloat ElbowServoAngle[m[K’
+ float ShoulderServoAngle, [01;31m[KElbowServoAngle[m[K;
+                           [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/MoveArm.cpp:26:27:[m[K [01;36m[Knote: [m[K‘[01m[Kfloat ElbowServoAngle[m[K’ previously declared here
+ float ShoulderServoAngle, [01;36m[KElbowServoAngle[m[K;
+                           [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/MoveArm.cpp:44:5:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kint channel1[m[K’
+ int [01;31m[Kchannel1[m[K = 12;
+     [01;31m[K^~~~~~~~[m[K
+[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/MoveArm.cpp:27:5:[m[K [01;36m[Knote: [m[K‘[01m[Kint channel1[m[K’ previously defined here
+ int [01;36m[Kchannel1[m[K = 12;
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/MoveArm.cpp:45:5:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kint channel2[m[K’
+ int [01;31m[Kchannel2[m[K = 13;
+     [01;31m[K^~~~~~~~[m[K
+[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/MoveArm.cpp:28:5:[m[K [01;36m[Knote: [m[K‘[01m[Kint channel2[m[K’ previously defined here
+ int [01;36m[Kchannel2[m[K = 13;
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/MoveArm.cpp:48:7:[m[K [01;31m[Kerror: [m[K‘[01m[KVMXPi vmx[m[K’ redeclared as different kind of symbol
+ VMXPi [01;31m[Kvmx[m[K;
+       [01;31m[K^~~[m[K
+In file included from [01m[K/usr/local/include/vmxpi/VMXPi.h:26[m[K,
+                 from [01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/../vmxpi_ros_servo/include/Servo_ros.h:4[m[K,
+                 from [01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/MoveArm.cpp:2[m[K:
+[01m[K/usr/local/include/vmxpi/AHRS.h:52:11:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Knamespace vmx { }[m[K’
+ namespace [01;36m[Kvmx[m[K {
+           [01;36m[K^~~[m[K
+[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/MoveArm.cpp:[m[K In function ‘[01m[Kvoid ShoulderOffsetCallback(const ConstPtr&)[m[K’:
+[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/MoveArm.cpp:63:37:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K,[m[K’ token
+     ServoROS ShoulderServo(&nh, &vmx[01;31m[K,[m[K channel1);
+                                     [01;31m[K^[m[K
+[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/MoveArm.cpp:[m[K In function ‘[01m[Kvoid ElbowOffsetCallback(const ConstPtr&)[m[K’:
+[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/MoveArm.cpp:74:34:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K,[m[K’ token
+     ServoROS ElbowServo(&nh, &vmx[01;31m[K,[m[K channel2);
+                                  [01;31m[K^[m[K
+[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/MoveArm.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/MoveArm.cpp:87:5:[m[K [01;31m[Kerror: [m[K‘[01m[KShoulderServo[m[K’ was not declared in this scope
+     [01;31m[KShoulderServo[m[K.GetAngle();
+     [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/MoveArm.cpp:87:5:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KShoulder_Servo_Sub[m[K’
+     [01;36m[KShoulderServo[m[K.GetAngle();
+     [01;36m[K^~~~~~~~~~~~~[m[K
+     [32m[KShoulder_Servo_Sub[m[K
+[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/MoveArm.cpp:90:5:[m[K [01;31m[Kerror: [m[K‘[01m[KElbowServo[m[K’ was not declared in this scope
+     [01;31m[KElbowServo[m[K.GetAngle();
+     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/MoveArm.cpp:90:5:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KElbow_Servo_Sub[m[K’
+     [01;36m[KElbowServo[m[K.GetAngle();
+     [01;36m[K^~~~~~~~~~[m[K
+     [32m[KElbow_Servo_Sub[m[K
+[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/MoveArm.cpp:95:21:[m[K [01;31m[Kerror: [m[Kexpected initializer at end of input
+     ros::Subscriber [01;31m[KElbowOffset[m[K
+                     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/MoveArm.cpp:95:21:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/MoveArm.cpp:79:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+ [01;36m[K{[m[K
+ [01;36m[K^[m[K
+make[2]: *** [CMakeFiles/MoveArm.dir/build.make:63: CMakeFiles/MoveArm.dir/src/MoveArm.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:754: CMakeFiles/MoveArm.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
 In file included from [01m[K/usr/include/c++/8/vector:69[m[K,
                  from [01m[K/usr/include/boost/math/special_functions/math_fwd.hpp:26[m[K,
                  from [01m[K/usr/include/boost/math/special_functions/round.hpp:15[m[K,
@@ -51,3 +123,4 @@ In file included from [01m[K/usr/include/c++/8/memory:65[m[K,
          [01;36m[K__uninit_copy[m[K(_InputIterator __first, _InputIterator __last,
          [01;36m[K^~~~~~~~~~~~~[m[K
 [01m[K/usr/include/c++/8/bits/stl_uninitialized.h:76:9:[m[K [01;36m[Knote: [m[Kparameter passing for argument of type ‘[01m[Kstd::move_iterator<dynamic_reconfigure::DoubleParameter_<std::allocator<void> >*>[m[K’ changed in GCC 7.1
+make: *** [Makefile:141: all] Error 2

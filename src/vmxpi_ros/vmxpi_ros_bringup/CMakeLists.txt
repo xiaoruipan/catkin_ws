@@ -206,6 +206,35 @@ add_dependencies(TESTING
 	digitalout_ros
   	${PROJECT_NAME}_gencfg)
 
+	  add_executable(Teleopmovement src/Teleopmovement.cpp)
+	  target_link_libraries(Teleopmovement
+		  vmxpi_hal 
+		  navx_ros_wrapper 
+		  titandriver_ros 
+		  titandriver_ros_wrapper 
+		  cobra_ros 
+		  sharp_ros
+		  servo_ros 
+		  ultrasonic_ros
+			iowd_ros
+		  digitalin_ros
+		  digitalout_ros
+		  ${catkin_LIBRARIES}
+	  )
+	  add_dependencies(Teleopmovement
+			navx_ros_wrapper 
+		  titandriver_ros 
+		  titandriver_ros_wrapper 
+		  cobra_ros 
+		  sharp_ros
+		  servo_ros 
+		  ultrasonic_ros
+			iowd_ros
+		  digitalin_ros
+		  digitalout_ros
+			${PROJECT_NAME}_gencfg)
+	  
+
 
 
 	  add_executable(KeyboardInputs src/KeyboardInputs.cpp)
@@ -265,31 +294,113 @@ add_dependencies(TESTING
 				  ${PROJECT_NAME}_gencfg)
 				  
 				  add_executable(JoystickInput src/JoystickInput.cpp)
-			target_link_libraries(JoystickInput PRIVATE
-				vmxpi_hal 
-				joy_node
-				navx_ros_wrapper 
-				titandriver_ros 
-				titandriver_ros_wrapper 
-				cobra_ros 
-				sharp_ros
-				servo_ros 
-				ultrasonic_ros
-				  iowd_ros
-				digitalin_ros
-				digitalout_ros
-				${catkin_LIBRARIES}
-			)
-			add_dependencies(JoystickInput 
-				  navx_ros_wrapper 
-				  joy_node
-				titandriver_ros 
-				titandriver_ros_wrapper 
-				cobra_ros 
-				sharp_ros
-				servo_ros 
-				ultrasonic_ros
-				  iowd_ros
-				digitalin_ros
-				digitalout_ros
-				  ${PROJECT_NAME}_gencfg)
+				  target_link_libraries(JoystickInput PRIVATE
+					  vmxpi_hal 
+					  navx_ros_wrapper 
+					  titandriver_ros 
+					  titandriver_ros_wrapper 
+					  cobra_ros 
+					  sharp_ros
+					  servo_ros 
+					  ultrasonic_ros
+						iowd_ros
+					  digitalin_ros
+					  digitalout_ros
+					  ${catkin_LIBRARIES}
+				  )
+				  add_dependencies(JoystickInput 
+						navx_ros_wrapper 
+					  titandriver_ros 
+					  titandriver_ros_wrapper 
+					  cobra_ros 
+					  sharp_ros
+					  servo_ros 
+					  ultrasonic_ros
+						iowd_ros
+					  digitalin_ros
+					  digitalout_ros
+						${PROJECT_NAME}_gencfg)					
+
+add_executable(movement_node src/movement_node.cpp)
+target_link_libraries(movement_node PRIVATE
+	vmxpi_hal 
+	navx_ros_wrapper 
+	titandriver_ros 
+	titandriver_ros_wrapper 
+	cobra_ros 
+	sharp_ros
+	servo_ros 
+	ultrasonic_ros
+  	iowd_ros
+	digitalin_ros
+	digitalout_ros
+	${catkin_LIBRARIES}
+)
+add_dependencies(movement_node 
+  	navx_ros_wrapper 
+	titandriver_ros 
+	titandriver_ros_wrapper 
+	cobra_ros 
+	sharp_ros
+	servo_ros 
+	ultrasonic_ros
+  	iowd_ros
+	digitalin_ros
+	digitalout_ros
+  	${PROJECT_NAME}_gencfg)
+						
+add_executable(MoveArm src/MoveArm.cpp)
+target_link_libraries(MoveArm PRIVATE
+	vmxpi_hal 
+	navx_ros_wrapper 
+	titandriver_ros 
+	titandriver_ros_wrapper 
+	cobra_ros 
+	sharp_ros
+	servo_ros 
+	ultrasonic_ros
+  	iowd_ros
+	digitalin_ros
+	digitalout_ros
+	${catkin_LIBRARIES}
+)
+add_dependencies(MoveArm 
+  	navx_ros_wrapper 
+	titandriver_ros 
+	titandriver_ros_wrapper 
+	cobra_ros 
+	sharp_ros
+	servo_ros 
+	ultrasonic_ros
+  	iowd_ros
+	digitalin_ros
+	digitalout_ros
+  	${PROJECT_NAME}_gencfg)
+add_executable(testarm src/testarm.cpp)
+target_link_libraries(testarm PRIVATE
+	vmxpi_hal 
+	navx_ros_wrapper 
+	titandriver_ros 
+	titandriver_ros_wrapper 
+	cobra_ros 
+	sharp_ros
+	servo_ros 
+	ultrasonic_ros
+  	iowd_ros
+	digitalin_ros
+	digitalout_ros
+	${catkin_LIBRARIES}
+)
+add_dependencies(testarm 
+  	navx_ros_wrapper 
+	titandriver_ros 
+	titandriver_ros_wrapper 
+	cobra_ros 
+	sharp_ros
+	servo_ros 
+	ultrasonic_ros
+  	iowd_ros
+	digitalin_ros
+	digitalout_ros
+  	${PROJECT_NAME}_gencfg)
+						

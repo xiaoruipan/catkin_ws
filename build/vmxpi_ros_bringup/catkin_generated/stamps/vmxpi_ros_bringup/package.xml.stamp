@@ -22,6 +22,7 @@
   <depend>vmxpi_ros_navx</depend>
   <depend>vmxpi_ros_servo</depend>
   <depend>vmxpi_ros_io</depend>
+  <depend>joy_node</depend>
 
   <!-- The export tag contains other, unspecified, tags -->
   <export>

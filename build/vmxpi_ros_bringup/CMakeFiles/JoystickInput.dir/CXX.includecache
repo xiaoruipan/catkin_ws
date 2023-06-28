@@ -13,6 +13,8 @@ sensor_msgs/Joy.h
 -
 std_msgs/String.h
 -
+std_msgs/Float32.h
+-
 
 /opt/ros/noetic/include/ros/advertise_options.h
 ros/forwards.h
@@ -678,6 +680,22 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 std_msgs/Header.h
+-
+
+/opt/ros/noetic/include/std_msgs/Float32.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
 -
 
 /opt/ros/noetic/include/std_msgs/Header.h

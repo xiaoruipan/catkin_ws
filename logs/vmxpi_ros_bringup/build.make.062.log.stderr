@@ -1,9 +1,8 @@
-[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/JoystickInput.cpp:[m[K In function ‘[01m[Kvoid joyCallback(const ConstPtr&)[m[K’:
-[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/JoystickInput.cpp:45:5:[m[K [01;31m[Kerror: [m[K‘[01m[KJoyInputPub[m[K’ was not declared in this scope
-     [01;31m[KJoyInputPub[m[K.publish(msg);
-     [01;31m[K^~~~~~~~~~~[m[K
-make[2]: *** [CMakeFiles/JoystickInput.dir/build.make:63: CMakeFiles/JoystickInput.dir/src/JoystickInput.cpp.o] Error 1
-make[1]: *** [CMakeFiles/Makefile2:179: CMakeFiles/JoystickInput.dir/all] Error 2
+[01m[K/home/pi/catkin_ws/src/vmxpi_ros/vmxpi_ros_bringup/src/Battery.cpp:4:[m[K [01;31m[Kerror: [m[Kunterminated #ifndef
+ #ifndef VMXPOWER_H_
+ 
+make[2]: *** [CMakeFiles/Battery.dir/build.make:63: CMakeFiles/Battery.dir/src/Battery.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:945: CMakeFiles/Battery.dir/all] Error 2
 make[1]: *** Waiting for unfinished jobs....
 In file included from [01m[K/usr/include/c++/8/vector:69[m[K,
                  from [01m[K/usr/include/boost/math/special_functions/math_fwd.hpp:26[m[K,

@@ -4,12 +4,11 @@
 	<!-- <node pkg="vmxpi_ros_bringup" name="test_node" type="test_node" output="screen"/> -->
 	<!-- <node pkg="vmxpi_ros_bringup" name="main_node" type="main_node" output="screen"/> -->
 	<!-- <node pkg="vmxpi_ros_bringup" name="TESTING" type="TESTING" output="screen"/> -->
-	<!--<node pkg="vmxpi_ros_bringup" name="KeyboardInputs" type="KeyboardInputs" output="screen"/> -->
-	<node pkg="vmxpi_ros_bringup" name="TeleopOut" type="TeleopOut" output="screen"/>
-	<node pkg="vmxpi_ros_bringup" name="JoystickInput" type="JoystickInput" output="screen"/> 
+	<!-- <node pkg="vmxpi_ros_bringup" name="KeyboardInputs" type="KeyboardInputs" output="screen"/> -->
+	<!-- <node pkg="vmxpi_ros_bringup" name="TeleopOut" type="TeleopOut" output="screen"/> -->
+	<!-- <node pkg="vmxpi_ros_bringup" name="JoystickInput" type="JoystickInput" output="screen"/> -->
 	<!-- <node pkg="vmxpi_ros_bringup" name="Teleopmovement" type="Teleopmovement" output="screen"/> -->
-     <!-- Turtlesim Node-->
 	<!-- <node pkg="vmxpi_ros_bringup" name="movement_node" type="movement_node" output="screen"/>  -->
-
-
+	<node pkg="vmxpi_ros_bringup" name="MoveArm" type="MoveArm" output="screen"/>
+	<!-- <node pkg="vmxpi_ros_bringup" name="testarm" type="testarm" output="screen"/> -->
 </launch>

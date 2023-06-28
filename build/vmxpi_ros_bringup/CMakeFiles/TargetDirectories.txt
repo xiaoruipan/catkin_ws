@@ -2,9 +2,11 @@
 /home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles/install.dir
 /home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles/list_install_components.dir
 /home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles/test.dir
+/home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles/movement_node.dir
 /home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles/JoystickInput.dir
 /home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles/TeleopOut.dir
 /home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles/KeyboardInputs.dir
+/home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles/Teleopmovement.dir
 /home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles/std_msgs_generate_messages_nodejs.dir
 /home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles/std_msgs_generate_messages_py.dir
 /home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir
@@ -23,6 +25,7 @@
 /home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles/roscpp_generate_messages_lisp.dir
 /home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles/roscpp_generate_messages_eus.dir
 /home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles/download_extra_data.dir
+/home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles/MoveArm.dir
 /home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles/doxygen.dir
 /home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles/std_msgs_generate_messages_cpp.dir
 /home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles/tests.dir
@@ -41,6 +44,7 @@
 /home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles/vmxpi_ros_generate_messages_eus.dir
 /home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles/vmxpi_ros_generate_messages_lisp.dir
 /home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles/vmxpi_ros_generate_messages_py.dir
+/home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles/testarm.dir
 /home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles/vmxpi_ros_bringup_gencfg.dir
 /home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles/test_node.dir
 /home/pi/catkin_ws/build/vmxpi_ros_bringup/CMakeFiles/TESTING.dir
